@@ -14,6 +14,7 @@
 		B40CEE9529FFF747000A0AB6 /* SnipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CEE9429FFF747000A0AB6 /* SnipperTests.swift */; };
 		B40CEE9F29FFF747000A0AB6 /* SnipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CEE9E29FFF747000A0AB6 /* SnipperUITests.swift */; };
 		B40CEEA129FFF747000A0AB6 /* SnipperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CEEA029FFF747000A0AB6 /* SnipperUITestsLaunchTests.swift */; };
+		B40CEEAE2A000AB9000A0AB6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B40CEEAD2A000AB9000A0AB6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B40CEE9A29FFF747000A0AB6 /* SnipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40CEE9E29FFF747000A0AB6 /* SnipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnipperUITests.swift; sourceTree = "<group>"; };
 		B40CEEA029FFF747000A0AB6 /* SnipperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnipperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B40CEEAD2A000AB9000A0AB6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		B40CEE7629FFF745000A0AB6 = {
 			isa = PBXGroup;
 			children = (
+				B40CEEAD2A000AB9000A0AB6 /* README.md */,
 				B40CEE8129FFF745000A0AB6 /* Snipper */,
 				B40CEE9329FFF747000A0AB6 /* SnipperTests */,
 				B40CEE9D29FFF747000A0AB6 /* SnipperUITests */,
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40CEEAE2A000AB9000A0AB6 /* README.md in Resources */,
 				B40CEE8A29FFF746000A0AB6 /* Preview Assets.xcassets in Resources */,
 				B40CEE8729FFF746000A0AB6 /* Assets.xcassets in Resources */,
 			);

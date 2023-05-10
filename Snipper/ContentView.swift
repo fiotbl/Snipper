@@ -18,13 +18,25 @@ struct ContentView: View {
 //
 //        }
 //        .padding()
-        Home()
+        Home().frame(maxWidth: 400)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct VerticalTabButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(.vertical, 10)
+            .padding(.horizontal, 20)
+            .foregroundColor(.white)
+            .background(Color.gray)
+            .cornerRadius(10)
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
     }
 }
 
@@ -36,25 +48,28 @@ struct Home : View {
                                     
                                 }) {
                                     
-                                    Image("menu")
-                                        .renderingMode(.original)
-                                        .resizable()
-                                        .frame(width: 22, height: 22)
+                                    Text("Code Snippets")
                                     
                                 }
+                                .buttonStyle(VerticalTabButtonStyle())
                                 .padding(.top)
                 Button(action: {
                                     
                                 }) {
                                     
-                                    Image("menu")
-                                        .renderingMode(.original)
-                                        .resizable()
-                                        .frame(width: 22, height: 22)
+                                    Text("Git commands")
                                     
                                 }
+                                .buttonStyle(VerticalTabButtonStyle())
                                 .padding(.top)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading) // Expand the VStack to the left
+            .alignmentGuide(.leading) { _ in 0 }
+            .background(Color.gray)
+            Divider() // Add a vertical divider
+                       
+                       Text("Hello, world!") // Add a text component
+                           .padding()
         }
     }
 }
