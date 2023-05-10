@@ -62,7 +62,11 @@ struct Home : View {
                                 }
                                 .buttonStyle(VerticalTabButtonStyle())
                                 .padding(.top)
+                                .alignmentGuide(.top, computeValue: { dimension in 0})
+                Spacer()
+    
             }
+            
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading) // Expand the VStack to the left
             .alignmentGuide(.leading) { _ in 0 }
             .background(Color.gray)
