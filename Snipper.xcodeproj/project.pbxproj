@@ -15,6 +15,7 @@
 		B40CEE9F29FFF747000A0AB6 /* SnipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CEE9E29FFF747000A0AB6 /* SnipperUITests.swift */; };
 		B40CEEA129FFF747000A0AB6 /* SnipperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CEEA029FFF747000A0AB6 /* SnipperUITestsLaunchTests.swift */; };
 		B40CEEAE2A000AB9000A0AB6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B40CEEAD2A000AB9000A0AB6 /* README.md */; };
+		B4A010462B0A0ECD00D73FDC /* Snippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A010452B0A0ECD00D73FDC /* Snippets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B40CEE9E29FFF747000A0AB6 /* SnipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnipperUITests.swift; sourceTree = "<group>"; };
 		B40CEEA029FFF747000A0AB6 /* SnipperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnipperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B40CEEAD2A000AB9000A0AB6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B4A010452B0A0ECD00D73FDC /* Snippets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B40CEE8629FFF746000A0AB6 /* Assets.xcassets */,
 				B40CEE8B29FFF746000A0AB6 /* Snipper.entitlements */,
 				B40CEE8829FFF746000A0AB6 /* Preview Content */,
+				B4A010452B0A0ECD00D73FDC /* Snippets.swift */,
 			);
 			path = Snipper;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A010462B0A0ECD00D73FDC /* Snippets.swift in Sources */,
 				B40CEE8529FFF745000A0AB6 /* ContentView.swift in Sources */,
 				B40CEE8329FFF745000A0AB6 /* SnipperApp.swift in Sources */,
 			);
