@@ -27,21 +27,20 @@ struct ContentView: View {
             .listStyle(SidebarListStyle())
             .frame(minWidth: 150, idealWidth: 200, maxWidth: 300)
             .toolbar {
+                // TODO: Add topic button is not showing up
                 ToolbarItem(placement: .automatic) {
                     Button(action: addTopic) {
-                        Label("Add Topic", systemImage: "plus")
+                        Image(systemName: "plus")
+                        Text("Add Topic")
                     }
                 }
             }
 
-            Text("Select a Topic")
+            Text("Select a Topic").frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 
     func addTopic() {
-        // Add a new topic to the topics array
-        // For example purposes, we're adding a generic new topic
-        // You would have a way for the user to specify the topic name
         let newTopic = Topic(name: "New Topic \(topics.count + 1)")
         topics.append(newTopic)
     }
@@ -101,3 +100,11 @@ struct SnippetListView: View {
         pasteboard.setString(string, forType: .string)
     }
 }
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
